@@ -128,12 +128,14 @@ public class PageMeteo extends AppCompatActivity {
                         })
                     .create()
                     .show();
+                    mLocationClient.requestLocationUpdates(mRequest, mLocationCallback, Looper.myLooper());
                 }
             else {
                 // No explanation needed, we can request the permission.
                 ActivityCompat.requestPermissions(this,
                         new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                         MY_PERMISSIONS_REQUEST_LOCATION );
+                mLocationClient.requestLocationUpdates(mRequest, mLocationCallback, Looper.myLooper());
             }
         }
     }

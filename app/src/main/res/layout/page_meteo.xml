@@ -24,7 +24,7 @@
         android:layout_marginBottom="249dp"
         android:background="@color/colorAccent"
         android:padding="10px"
-        android:text="test"
+        android:text="Veuillez accorder les permissions nécessaires et redémarrer l'application."
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
         app:layout_constraintEnd_toEndOf="parent"
